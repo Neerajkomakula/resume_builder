@@ -1,0 +1,128 @@
+.heading {
+    font-family: 'Lobster', cursive;
+    color: brown;
+    font-size: 40px;
+    border-bottom: 2px solid brown;
+    
+}
+.subhead {
+    font-family: 'Montserrat', sans-serif;
+}
+.submit_block, .print_block{
+    
+    text-align: center;
+    
+}
+
+.reg{
+    display: block;
+}
+
+#cv{
+    display: none;
+}
+
+#template_2{
+    display: none;
+}
+
+
+/* print */
+html {
+    font-size: 15px;
+}
+
+.row-1 {
+    display: flex;
+}
+
+/* .container {
+
+    /* border: 2px solid black; 
+} */
+
+.col-1-1 {
+    width: 40%;
+    /* border: 2px solid red; */
+}
+
+.col-1-2 {
+    width: 60%;
+    /* border: 2px solid red; */
+}
+
+.img {
+    text-align: center;
+}
+
+#pic {
+    width: 40%;
+    height: 20%;
+}
+
+.name {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2px 8px;
+}
+
+.mg {
+    margin-left: 4px;
+    margin-bottom: 2px;
+}
+
+.obj_head {
+    height: 10%;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    margin-left: 4px;
+    ;
+}
+
+#obj_r {
+    margin-top: 15px;
+}
+
+.empty {
+    /* setting img empty space */
+    height: 20%;
+}
+
+.head {
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    border-bottom: 0.5px solid gray;
+}
+
+
+/* template2 */
+
+.borderleft {
+    border-left: 2px solid black;
+    border-left-style: dashed;
+}
+
+.borderblk {
+    border: 1px double rgb(2, 2, 3);
+}
+
+.head2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+.main {
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Tiro Kannada', serif;
+    font-size: 40px;
+}
+
+.print_block {
+
+    text-align: center;
+
+}
+
+
+

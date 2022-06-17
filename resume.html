@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+
+<!-- template2 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tiro+Kannada:ital@1&display=swap"
+        rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <script src="resum.js"></script>
+
+
+    <div class="container border1 reg" id="registration">
+        <div class="text-center"><span class="heading">Create Your Resume</span></div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-6 border2">
+                <!-- <h5 class="text-center subhead "> personal information</h5>
+                    <hr> -->
+                <div class="mb-2">
+                    <label for="Fname" class="form-lable">First Name :</label>
+                    <input type="text" id="Fname" class="form-control">
+                </div>
+
+                <div class="mb-2">
+                    <label for="Lname" class="form-lable">Last Name :</label>
+                    <input type="text" id="Lname" class="form-control">
+                </div>
+
+                <div class="mb-2">
+                    <label for="ContactNum" class="form-lable">Contact Number :</label>
+                    <input type="text" placeholder="+91XXXXX,+1XXXXX" id="ContactNum" class="form-control">
+                </div>
+
+                <div class="mb-2">
+                    <label for="Email" class="form-lable">Email :</label>
+                    <input type="Email" id="Email" class="form-control">
+                </div>
+
+
+
+                <div class="mb-2">
+                    <label for="Address" class="form-lable">Address :</label>
+                    <textarea class="form-control" id="Address" rows="3"></textarea>
+                </div>
+
+                <div class="mb-2">
+                    <label for="Linkedin" class="form-lable">Linkedin :</label>
+                    <input type="text" id="Linkedin" class="form-control">
+                </div>
+
+
+
+            </div>
+            <div class="col-md-6 border2">
+                <!-- <h5 class="text-center subhead"> professional information</h5>
+                    <hr> -->
+                <div class="mb-2">
+                    <label for="objective" class="form-lable">Objective : </label>
+                    <!-- <input type="text" id="objective" class="form-control"> -->
+                    <textarea id="objective" class="form-control" rows="4"></textarea>
+                </div>
+
+                <div class="mb-2" id="skill_id">
+                    <label for="skills" class="form-lable ">skills : </label>
+                    <!-- <input type="text" id="objective" class="form-control"> -->
+                    <input type="text" placeholder=" click (add) button to add a box" id="skills"
+                        class="form-control skill_cls">
+
+                    <div class="mt-2" id="skill_btn">
+                        <center><button type="button" onclick="skillsfun()" id="skillbtn2"
+                                class="btn btn-secondary btn-sm butt">ADD</button></center>
+                    </div>
+
+                </div>
+
+                <div class="mb-2" id="exp_id">
+                    <label for="experience" class="form-lable ">Experience : </label>
+                    <!-- <input type="text" id="objective" class="form-control"> -->
+                    <input type="text" placeholder=" click (add) button to add a box" id="experience"
+                        class="form-control exp_cls">
+
+                    <div class="mt-2" id="exp_btn">
+                        <center><button type="button" onclick="expfun()" id="expbtn2"
+                                class="btn btn-secondary btn-sm butt">ADD</button></center>
+                    </div>
+
+                </div>
+
+                <div class="mb-2" id="edu_id">
+                    <label for="education" class="form-lable ">Education : </label>
+                    <!-- <input type="text" id="objeass="form-control"> -->
+                    <input type="text" placeholder=" click (add) button to add a box" id="education"
+                        class="form-control edu_cls">
+
+                    <div class="mt-2" id="edu_btn">
+                        <center><button type="button" onclick="edufun()" id="edubtn2"
+                                class="btn btn-secondary btn-sm butt">ADD</button></center>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="submit_block">
+            <button type="button" id="sub_btn" onclick="create(1)" class="btn btn-success bt-md my-5">SUBMIT</button>
+        </div>
+        <div class="submit_block">
+            <button type="button" id="sub_btn" onclick="create(2)" class="btn btn-success bt-md my-5">SUBMIT</button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- cv format starts from here -->
+
+    
+    <div class="container" id="cv">
+        <div class="row-1">
+            <div class="col-1-1">
+                <div class="img">
+                    <img id="pic"
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                        alt="">
+
+                </div>
+                <div class="profile">
+                    <div class="name">
+                        <span id="fname_r">Neeraj</span>
+                        <span id="lname_r">Komakula</span>
+                    </div>
+                </div>
+                <div class="contact mg">
+                    <strong>Phone : </strong><span id="num_r">7093938297</span>
+                </div>
+                <div class="Email mg">
+                    <strong>Email : </strong><span id="email_r">komakulaneeraj8297@gmail.com</span>
+                </div>
+                <div class="linked mg">
+                    <strong>Linkedin : </strong><span id="linkedin_r">linkedin.com</span>
+                </div>
+                <div class="Address mg">
+                    <strong>Address : </strong><span id="address_r">11-22-529 kashibugga warangal tilak road</span>
+                </div>
+            </div>
+            <div class="col-1-2">
+                <div class="empty">
+
+                </div>
+                <div class="head">
+                    Objective :-
+                </div>
+                <div id="obj_r">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus inventore maiores corporis omnis
+                    commodi, consequuntur nemo porro quam voluptatibus cupiditate pariatur rerum, velit impedit amet
+                    laborum sequi obcaecati molestiae aspernatur veniam! Aliquam, animi. Dicta, at. Possimus corporis
+                    libero illum velit eos modi quod exercitationem!
+                </div>
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="head mg">
+                Experience :-
+            </div>
+            <div id="exp_r" class="mg">
+                
+                
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <11>1</11>
+            
+            </div>
+        </div>
+        <div class="row3">
+            <div class="head mg">
+                Skills :-
+            </div>
+            <div id="skills_r" class="mg">
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <11>1</11>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="head mg">
+                Education :-
+            </div>
+            <div id="edu_r" class="mg">
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <11>1</11>
+            </div>
+        </div>
+
+
+        <div class="print_block">
+            <button type="button" id="print_btn" onclick="printpage()" class="btn btn-success bt-md my-5"> PRINT</button>
+        </div>
+        
+
+    </div>
+
+
+    <div class="container2" id="template_2">
+        <div class="container .bg-danger">
+            <div class="row ">
+    
+                <div class="col-8 p-4">
+                    <div class="fname_cv main" id="fname_2">NEERAJ</div>
+                    <div class="lname_cv main" id="last">KOMAKUALA</div>
+                    <h6 class="sheading_cv" id="shead_2">QUICK LEARNER</h3>
+                </div>
+                <div class="col-4 p-4 mt-2">
+                    <div class="sideparts" id="num"></div>
+                    <div class="sideparts" id="mail"></div>
+                    <div class="sideparts" id="address"></div>
+                    <div class="sideparts" id="linkedin"></div>
+                </div>
+            </div>
+    
+    
+            <div class="row mb-4">
+                <div class="objective_cv">
+                    <div class="head2">
+                        Objective :-
+                    </div>
+                    <div id="objective_2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, delectus officia voluptates neque
+                    perspiciatis quam suscipit perferendis, expedita, magnam nisi similique beatae. Perspiciatis repellendus
+                    nihil illum ullam, voluptatibus totam quae molestiae. Laboriosam.
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="row mb-4">
+                <div class="col-5  mb-4">
+                    <div class="experience_content mb-2">
+                        <div class="head2">
+                            Experience :-
+                        </div>
+                        <div class="exp_content" id ="exp_2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odit deleniti delectus, iusto ex
+                            quidem iste temporibus explicabo rem quaerat dolorum, sequi recusandae neque doloribus est
+                            blanditiis aperiam quos accusamus exercitationem nostrum!
+                        </div>
+                    </div>
+                    <div class="borderblk">
+    
+                    </div>
+                    <div class="skills_cv mb-2">
+                        <div class="head2">
+                            Skills :-
+                        </div>
+                        <div class="skills_content" id="skills_2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi molestias quas voluptate
+                            fugit, soluta sunt sit error vel voluptatibus debitis reiciendis! Veritatis quas maiores
+                            possimus sit dolores eos cupiditate accusantium dolorum iusto necessitatibus!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 borderleft mb-4">
+                    <div class="head2">
+                        Education :-
+                    </div>
+                    <div class="Education_content" id="edu_2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum suscipit illum laboriosam? Aut
+                        ducimus ipsa voluptatum ipsam? Assumenda deleniti accusantium suscipit quidem, esse optio rem
+                        incidunt in, provident nobis itaque aliquam fugit, rerum pariatur. Eaque aut praesentium vero,
+                        animi vel quaerat voluptatem ipsam ratione repudiandae perspiciatis sunt voluptas error sint et
+                        in non sed impedit.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto sit accusamus
+                        exercitationem tempore libero aut assumenda animi ullam autem eligendi provident, temporibus
+                        omnis saepe corporis, repudiandae consectetur repellat culpa cupiditate voluptas facilis optio
+                        voluptatibus explicabo. Quam autem blanditiis facere sed vel velit fugit corporis.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="print_block">
+                <button type="button" id="print_btn" onclick="printpage()" class="btn btn-success bt-md my-5">
+                    PRINT</button>
+            </div>
+        </div>
+    
+    </div>
+</body>
+
+</html>
